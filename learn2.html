@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Script Tutorials" />
+    <title>MESTECH'14</title>
+    <link href="style2.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="jquery-1.11.0.js"></script>
+</head>
+<body  style="overflow:hidden;">
+    
+    <div class="stars">
+    </div>
+    <div class="twinkling">
+    <!--<div class="fog"></div>-->
+    <div class="back"></div>
+    <div class="mes" >MES College Of Enigneering</div>
+    <div class="title"><h1>MESTECH'14</h1><div class="lpc"><a id="learnh" >Learn.</a><a id="playh">Play.</a><a id="celh">Celebrate.</a></div></div>
+    
+   <div class="rot1"><img src="images/rot1.png"></img></div>
+   <div class="rot2"><img src="images/rot2.png"></img></div>
+    
+  <!--social icons-->
+    <!--<div style="position:absolute;z-index:000;right:0;bottom:0;">-->
+   <div class="ico"> <img id="fb" src="images/fb.png" height="56.66666666666667" width="54.6666666666667" class="logo"></img>
+                       <img id="google" src="images/google.png" height="56.66666666666667" width="54.6666666666667" class="logo"></img>
+                        <img id="twitter" src="images/twitter.png" height="56.66666666666667" width="54.6666666666667" class="logo"></img>
+                         <img id="youtube" src="images/youtube.png" height="56.66666666666667" width="54.6666666666667" class="logo"></img>
+                        </div>
+ <!--   </div>-->
+    <!--icons-->
+    <div id="main3">
+        <!--<ul class="ch-grid">
+					<li>
+        <div class="ch-item ch-img-1" id="talks">
+							<div class="ch-info">
+        <!--<img src="images/talks.png" height="20%" width="12%" id="talks1"> </img>-->
+        <!--<h3>Workshop</h3>
+        </div>
+						</li></ul></div>-->
+        
+
+        
+        
+       <img src="images/talks.png" id="talks"> </img>
+        <img src="images/initiative.png"  id="init"></img>
+        <img src="images/workshop.png"  id="work"></img>
+        <img src="images/expos.png"  id="exp"></img>
+        <div class="area2" id="t">Hello</div>
+        <div class="area2" id="w">Heo</div>
+        <div class="area2" id="i">Helo</div>
+        <div class="area2" id="e">HE</div>
+    </div>
+    
+     <div id="side">
+        
+        
+        <img src="images/talks.png" height="20%" width="12%" id="talks1"> </img>
+        
+        
+        
+        <img src="images/initiative.png" height="20%" width="12%" id="init1"></img>
+        <img src="images/workshop.png" height="20%" width="12%"id="work1" ></img>
+        <img src="images/expos.png" height="20%" width="12%" id="exp1"></img></div>
+    </div>
+                      
+
+    
+ 
+        
+                                  <div class="log" style="
+"><a >Register&nbsp&nbsp&nbsp</a><a>Login</a></div></div>
+    </div>
+    <div class="rot3"></div>
+    <!--<div class="clouds"></div>-->
+
+</body>
+<script>
+$(document).ready(function(){
+    $(".area2").hide();
+    $("#side").hide();
+    /*$("#init1").hide();
+       $("#work1").hide();
+       $("#exp1").hide();
+       $("#talks1").hide();*/
+   $("#talks").click(function(){
+       $("#talks").animate({top:"-130px",left:"-200px"},1000); 
+       $("#init").fadeOut(200);
+       $("#work").fadeOut(200);
+       $("#exp").fadeOut(200);
+       $(".area2").delay(1000).slideDown(700);
+        $("#side").delay(500).fadeIn(1000);
+              
+    });
+    $("#init").click(function(){
+       //$("#init").animate({left:"-20px"},500);
+       $("#init").delay(400).animate({top:"-130px",left:"-200px"},1000); 
+       $("#work").fadeOut(200);
+       $("#talks").hide(200);
+       $("#exp").fadeOut(200);
+       $(".area2").delay(1000).slideDown(700);
+       
+       $("#side").delay(500).fadeIn(1000);
+              
+    });
+    $("#work").click(function(){
+       
+       $("#work").delay(400).animate({top:"-130px",left:"-200px"},1000); 
+      $("#init").hide(200);
+       $("#talks").hide(200);
+       $("#exp").hide(200);
+       $(".area2").delay(1000).slideDown(700);
+       
+       $("#side").delay(500).fadeIn(1000);
+              
+    });
+    
+    $("#exp").click(function(){
+       
+       $("#exp").delay(400).animate({top:"-130px",left:"-200px"},1000); 
+      $("#init").hide(200);
+       $("#talks").hide(200);
+       $("#work").hide(200);
+       $(".area2").delay(500).slideDown(700);
+       
+       $("#side").delay(500).fadeIn(1000);
+              
+    });
+    
+     $("#exp1").click(function(){
+       
+       /*$("#init").hide(200);
+       $("#talks").hide(200);
+       $("#work").hide(200);*/
+       $(".area2").delay(100).slideUp(700);
+       $("#exp").css({"left":"-200px","top":"-130px"});
+       $("#init").hide();
+       $("#talks").hide();
+       $("#work").hide();
+       $("#exp").fadeIn();
+       $("#e").delay(500).slideDown(700);
+              
+    });
+    
+    $("#init1").click(function(){
+       
+       /*$("#init").hide(200);
+       $("#talks").hide(200);
+       $("#work").hide(200);*/
+       $(".area2").delay(100).slideUp(700);
+       $("#init").css({"left":"-200px","top":"-130px"});
+       $("#exp").hide();
+       $("#talks").hide();
+       $("#work").hide();
+       $("#init").fadeIn();
+       $("#i").delay(500).slideDown(700);    
+    });
+    
+    $("#work1").click(function(){
+       
+       /*$("#init").hide(200);
+       $("#talks").hide(200);
+       $("#work").hide(200);*/
+       $(".area2").delay(100).slideUp(700);
+       $("#work").css({"left":"-200px","top":"-130px"});
+       $("#exp").hide();
+       $("#talks").hide();
+       $("#init").hide();
+       $("#work").fadeIn();
+       $("#w").delay(500).slideDown(700);  
+    });
+    $("#talks1").click(function(){
+       
+       /*$("#init").hide(200);
+       $("#talks").hide(200);
+       $("#work").hide(200);*/
+       $(".area2").delay(100).slideUp(700);
+       $("#talks").css({"left":"-200px","top":"-130px"});
+       $("#exp").hide();
+       $("#init").hide();
+       $("#work").hide();
+       $("#talks").fadeIn();
+       $("#t").delay(500).slideDown(700);       
+    });
+    
+});
+
+</script>
+                          
+
+</html>

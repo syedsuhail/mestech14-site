@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <title>Night sky with twinkling stars - CSS3 demo | Script Tutorials</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="jquery-1.11.0.js"></script>
+</head>
+<body >
+    
+    <div class="stars">
+    </div>
+    <div class="twinkling">
+    <div class="fog"></div>
+    <div class="back"></div>
+    <div class="mes">MES College Of Enigneering</div>
+    <div class="title"><h1>MESTECH'14</h1><h6><span>Learn.</span><span style="margin-left:5%;">Play.</span><span style="margin-left:5%;" >Celebrate</span></h6></div>
+    <div class="rot1"></div>
+    <div class="rot2"></div>
+    <div class="rot4"></div>
+   <!-- <div class="rot3"></div>-->
+    
+        <div class="log" style="
+height:40px;
+width:100%;
+background:rgba(200,200,200,0.1);"><a >Register&nbsp&nbsp&nbsp</a><a>Login&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></div></div>
+    </div>
+    <div class="rot3"></div>
+    <!--<div class="clouds"></div>-->
+    <div class="icon-wrap"  >
+        <!--<img src="images/vara.png"   ></img>-->
+        <img class="icon" src="images/timer.png" id="iaei"  ></img>
+        <img src="images/mech.png"  class="icon" id="imech" ></img>
+        
+        <img src="images/computer.png" class="icon"id="icse" ></img>
+        <img src="images/bulb.png" class="icon" id="ieee"></img>
+        <img src="images/attherate.png" class="icon" id="iit"></img>
+         <img src="images/compass.png" class="icon" id="icivil"></img>
+        <img src="images/procces.png" class="icon" id="iece"></img>
+        <img src="images/tower.png" class="icon" id="irobo"></img>
+        </div>
+        
+        
+        <div class="area" id="cse">
+        <ul>
+            <li>Insystem Treasure Hunt</li>
+            <li>Webby</li>
+            <li>Code Master </li>
+            <li></li>
+        </ul>
+        
+        
+        </div>
+        
+        <div class="area" id="mech">
+        <ul>
+            <li>Lathemania</li>
+            <li>CAD-Pro</li>
+            <li>Auto-Quiz</li>
+            <li>Paper Presentation</li>
+        </ul>
+        
+        
+        </div>
+        
+        <div class="area" id="eee">
+        <ul>
+            <li>Wiring</li>
+            <li>Crazy Bulb</li>
+            <li>Waveform Generation</li>
+            <li>Extreme Engineering</li>
+            
+            <li>MATLAB Modelling</li>
+            <li>Project Competition</li>
+            
+        </ul>
+        
+        
+        </div>
+        
+        <div class="area" id="ece">
+        <ul>
+            <li>Wave Cloning</li>
+            <li>Paper Presentation</li>
+            <li>RC Race</li>
+            <li>E-Circuit Debugging</li>
+            
+            <li>Signal Decoding</li>
+            <li>Electronic Hunt</li>
+            
+        </ul>
+        
+        </div>
+        
+        <div class="area" id="aei">
+        <ul>
+            <li>Diffuse the Circuit</li>
+            <li>Fast and Furious Electronics</li>
+            <li>RC Race</li>
+            <li>Tech-Quiz Mastrmind</li>
+            
+            <li>Wave Cloning</li>
+            
+            
+        </ul>
+        
+        </div>
+        
+        <div class="area" id="civil">
+        <ul>
+            <li>Civil Monopoly</li>
+            <li>Live Construction</li>
+            <li>Paper Presentation</li>
+            
+            
+        </ul>
+        </div>
+        
+        
+        <div class="area" id="it">
+        <ul>
+            <li>LAN Gaming</li>
+            <li>Code Master</li>
+            
+            
+            
+        </ul></div>
+        
+        <div class="area" id="robo"></div>
+        
+</body>
+<script>
+    $(document).ready(function(){
+        $(".area").hide();
+        $("#iaei").click(function(){
+            $(".area").slideUp(400);
+            $("#aei").delay(400).slideDown(1000);
+        });
+        $("#imech").click(function(){
+            $(".area").slideUp(400);
+            $("#mech").delay(400).slideDown(1000);
+        });
+        $("#icse").click(function(){
+            $(".area").slideUp(400);
+            $("#cse").delay(400).slideDown(1000);
+        });
+        $("#iece").click(function(){
+            $(".area").slideUp(400);
+            $("#ece").delay(400).slideDown(1000);
+        });
+        $("#ieee").click(function(){
+            $(".area").slideUp(400);
+            $("#eee").delay(400).slideDown(1000);
+        });
+        $("#iit").click(function(){
+            $(".area").slideUp(400);
+            $("#it").delay(400).slideDown(1000);
+        });
+        $("#icivil").click(function(){
+            $(".area").slideUp(400);
+            $("#civil").delay(400).slideDown(1000);
+        });
+        $("#irobo").click(function(){
+            $(".area").slideUp(400);
+            $("#robo").delay(400).slideDown(1000);
+        });
+    });
+    
+    </script>
+</html>

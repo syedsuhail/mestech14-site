@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/modernizr.custom.js"></script>
+		<style>
+		#pass{
+		border:2px solid white;
+		}
+		</style>
+	</head>
+	<body class="nl-blurred">
+		<div class="container demo-1">
+			<!-- Top Navigation -->
+						<div class="head">
+				<h5>MES COLLEGE OF ENGINEERING</h5>
+				<h1>MESTECH<span style="font-family:micro;font-size:1em;left:20px;"> '14</span> <br/><span  style="color:rgb(173,172,172);position:absolute;left:9%;">Registration Form</span></h1>	
+			</div>
+			<div class="main clearfix">
+				<form id="nl-form" class="nl-form">
+					Hi,<br/>
+					I am 
+					<input type="text" value="" placeholder="Name" /> 
+					
+					and I am a 
+					student of
+					<input type="text" value="" placeholder="College" /> 
+					
+					.You can contact me on 
+					 <input type="text" value="" placeholder="phone" /> and send me mail at <input type="email" value="" placeholder="email" />
+					Please choose this as my 
+					<input type="*" value="" placeholder="password" id="pass"/>
+					<div class="nl-submit-wrap">
+						<button class="nl-submit" type="submit">Register</button>
+					</div>
+					<div class="nl-overlay"></div>
+				</form>
+			</div>
+		</div><!-- /container -->
+		<script src="js/nlform.js"></script>
+		<script>
+			var nlform = new NLForm( document.getElementById( 'nl-form' ) );
+		</script>
+	</body>
+</html>
